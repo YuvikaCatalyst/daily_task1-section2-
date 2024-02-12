@@ -1,0 +1,220 @@
+@font-face {
+  font-family: manrope;
+  src: url("Manrope/Manrope-VariableFont_wght.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+.primary {
+  background-color: #1969ff;
+  color: #fff;
+  padding: 20px 16px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all ease-in-out 0.6s;
+}
+.primary:hover {
+  background-color: #fff;
+  color: #1969ff;
+  cursor: pointer;
+}
+header {
+  background-color: #212122;
+}
+.background-header{
+  background: linear-gradient(
+    90.29deg,
+    rgba(209, 209, 214, 0.08) 0.05%,
+    rgba(103, 116, 139, 0.08) 100%
+  ),
+  linear-gradient(
+    90.21deg,
+    rgba(212, 225, 236, 0.16) 0%,
+    rgba(103, 116, 139, 0.16) 100%
+  );
+background-color: #000;
+border-radius: 0 0 20px 20px;
+border-bottom: 1px solid #d4e1ec29;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  margin: auto;
+}
+
+.logo-img {
+  height: 32px;
+  width: 124px;
+}
+.header-list ul li a {
+  font-family: manrope;
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  gap: 10px;
+  padding: 10px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 48px;
+  transition: all ease-in-out 0.4s;
+}
+.header-list ul li a:hover{
+    color:#1969ff;
+    cursor: pointer;
+}
+.header-list ul {
+  display: flex;
+  list-style-type: none;
+}
+.landing-section {
+  background-color: #212122;
+  padding-top: 25px;
+}
+.landing-img {
+  max-width: 1280px;
+  margin: auto;
+}
+.landing-background {
+  height: 640px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.landing-heading {
+  font-weight: 700;
+  font-family: manrope;
+  font-size: 96px;
+  color: #fff;
+  z-index: 3;
+  margin-left: auto;
+  margin-right: auto;
+}
+.landing-wrapper {
+  position: relative;
+  height:690px;
+}
+.gradient {
+  background: linear-gradient(to right, #65b3df, #1969ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.landing-text {
+  font-family: manrope;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  z-index: 3;
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.landing-button {
+  z-index: 3;
+  margin-top:7%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+.banner-text{
+  position:relative;
+  height:100%;
+  z-index:4;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CircleCard{
+  background-color: #212122;
+}
+.card_wrapper{
+  background-color: #000;
+  padding-top:90px;
+  border-radius: 60px 60px 0 0;
+}
+.imageCards{
+  display:flex;
+  justify-content: space-between;
+}
+.imageCards1{
+  width:49%;
+  background-image: linear-gradient(rgba(51, 49, 45, 1), rgba(97, 93, 89, 1));
+  border-radius: 24px 24px 500px 500px;
+  overflow: hidden;
+}
+.imageCards2{
+  width:49%;
+  background-image:linear-gradient(rgba(43, 46, 49, 1),rgba(73, 80, 83, 1));
+  border-radius: 24px 24px 500px 500px;
+  overflow: hidden;
+}
+.imageCards1Content,.imageCards2Content{
+  width:80%;
+  margin:auto;
+}
+.card1Heading,.card2Heading{
+  color: #DFB8AC;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: manrope;
+  padding-bottom:40px;
+  padding-top:20px;
+}
+.card1Text,.card2Text{
+  color:#fff;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  font-family: manrope;
+}
+.learn-more-button{
+color:#fff;
+font-family: manrope;
+font-size: 25px;
+display:flex;
+justify-content: flex-end;
+text-decoration: none;
+padding-right: 40px;
+position: relative;
+transition: padding-right 0.3s ease;
+}
+
+.TransitionButton{
+  margin-bottom: 40px;
+}
+.learn-more-button .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px; 
+  transition: transform 0.3s ease;
+}
+.learn-more-button:hover {
+  padding-right: 30px; 
+}
+
+.learn-more-button:hover .arrow {
+  transform: translate(5px, -50%);
+}
+
+.learn-more-button:hover .arrow:before {
+  content: '-';
+}
